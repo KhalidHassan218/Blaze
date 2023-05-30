@@ -1,34 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MonkeyNFT
 
-## Getting Started
+Welcome to MonkeyNFT, the ultimate destination for NFT minting and marketplace enthusiasts! With our platform, you have the opportunity to immerse yourself in a collection of 2000 unique and captivating NFTs, ready for minting by anyone with a creative vision.
 
-First, run the development server:
+Our curated collection features a diverse range of NFTs, each with its own distinctive charm and character.You'll find an incredible array of artistic expressions awaiting your discovery.
+
+## Tech Stack
+
+**NextJs:** For client side(Frontend)
+
+**TailwindCSS:** For styling
+
+**Solidity:** For writing smart contract
+
+**Hardhat:** As a development environment
+
+**Ethers.js:** For connecting frontend with blockchain
+
+## Prerequisite
+
+- [NodeJS](https://nodejs.org/en/download)
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/rajaditya06/MonkeyNFT.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+  cd MonkeyNFT
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies (For blockchain)
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Go to the project directory
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  cd frontend
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Install dependencies (For client side)
 
-## Deploy on Vercel
+```bash
+  npm install --force
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start the server
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+  npm run dev
+```
+
+Go to localhost:3000
+
+## Screenshots
+
+<img width="1440" alt="Screenshot 2023-05-28 at 9 53 32 AM" src="https://github.com/rajaditya06/MonkeyNFT/assets/96560160/2ca09f79-eb2b-4bc8-8244-0f7c39b42d52">
+
+<img width="1440" alt="Screenshot 2023-05-28 at 9 54 03 AM" src="https://github.com/rajaditya06/MonkeyNFT/assets/96560160/e934fc91-26e2-43ec-bc5d-f54fcf05b8cb">
+<img width="1440" alt="Screenshot 2023-05-28 at 9 54 43 AM" src="https://github.com/rajaditya06/MonkeyNFT/assets/96560160/e79c2857-1075-4b03-8e10-3a510bed717e">
