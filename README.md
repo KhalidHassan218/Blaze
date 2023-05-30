@@ -40,18 +40,6 @@ Install dependencies (For blockchain)
   npm install
 ```
 
-Go to the project directory
-
-```bash
-  cd frontend
-```
-
-Install dependencies (For client side)
-
-```bash
-  npm install --force
-```
-
 Start the server
 
 ```bash
