@@ -50,7 +50,12 @@ Go to localhost:3000
 
 ## Screenshots
 
-<img width="1440" alt="Screenshot 2023-05-28 at 9 53 32 AM" src="https://github.com/rajaditya06/MonkeyNFT/assets/96560160/2ca09f79-eb2b-4bc8-8244-0f7c39b42d52">
+<img width="1440" alt="Screenshot 2023-05-28 at 9 53 32 AM" src="https://github.com/rajaditya06/MonkeyNFT/assets/96560160/b3a7e844-3ecc-4cfb-93f4-af537473cefb">
 
-<img width="1440" alt="Screenshot 2023-05-28 at 9 54 03 AM" src="https://github.com/rajaditya06/MonkeyNFT/assets/96560160/e934fc91-26e2-43ec-bc5d-f54fcf05b8cb">
-<img width="1440" alt="Screenshot 2023-05-28 at 9 54 43 AM" src="https://github.com/rajaditya06/MonkeyNFT/assets/96560160/e79c2857-1075-4b03-8e10-3a510bed717e">
+
+<img width="1440" alt="Screenshot 2023-05-28 at 9 54 03 AM" src="https://github.com/rajaditya06/MonkeyNFT/assets/96560160/b058deb5-9e10-454e-8ace-cda533f3eca8">
+
+
+<img width="1440" alt="Screenshot 2023-05-28 at 9 54 43 AM" src="https://github.com/rajaditya06/MonkeyNFT/assets/96560160/07503fa5-f9c5-4f31-a768-5361bb2013bc">
+
+
