@@ -1,6 +1,6 @@
 "use client";
 import { ethers } from "ethers";
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useEffect } from "react";
 import contractJSON from "./MonkeyNFT.json";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -50,6 +50,43 @@ const AppProvider = ({ children }) => {
       toast.warn("Please install Metamask");
     }
   };
+
+  useEffect(() => {
+    const getConnectedAccounts = async () => {
+      if (typeof window.ethereum !== "undefined") {
+        try {
+          const account = await window.ethereum.request({
+            method: "eth_accounts",
+          });
+          const provider = await new ethers.providers.Web3Provider(
+            window.ethereum
+          );
+          const signer = await provider.getSigner();
+          const monkeyNFT = await new ethers.Contract(
+            contractAddress,
+            contractABI,
+            signer
+          );
+          if (account.length > 0) {
+            setState({
+              provider,
+              signer,
+              account: account[0],
+              monkeyNFT,
+            });
+          } else {
+            toast.warn("Please connect wallet!");
+          }
+        } catch (error) {
+          toast.error(error.message);
+        }
+      } else {
+        toast.warn("Please install Metamask");
+      }
+    };
+
+    getConnectedAccounts();
+  }, []);
   return (
     <>
       <AppContext.Provider value={{ connectWallet, ...state }}>
