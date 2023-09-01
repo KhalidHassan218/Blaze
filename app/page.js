@@ -10,6 +10,7 @@ import MintForm from "./components/MintForm";
 import NFTInfo from "./components/NFTInfo";
 import NFTHomeCard from "./components/NFTHomeCard";
 
+
 const HomePage = () => {
   const { monkeyNFT, account } = useContext(AppContext);
   const [publicQuantity, setPublicQuantity] = useState("1");
@@ -23,7 +24,7 @@ const HomePage = () => {
     e.preventDefault();
     if (monkeyNFT) {
       try {
-        const value = 0.01 * publicQuantity;
+        const value = 0.001 * publicQuantity;
         const tx = await monkeyNFT.publicMint(publicQuantity, {
           value: ethers.utils.parseEther(value.toString()),
         });
@@ -126,9 +127,11 @@ const HomePage = () => {
 
   return (
     <>
-      <HeroSection />
+    <div className="grid grid-cols-2 gap-6 w-[70%] items-center	 mx-auto py-[50px] items-center">
+        
+     <HeroSection/>
 
-      <div className="grid grid-cols-2 w-[90%] mx-auto my-8">
+      <div style={{height:'100%'}} className=" w-[90%] py-[80px] mx-auto my-2">
         <NFTInfo reload={reload} />
         <div>
           <h3 className="text-2xl font-bold text-center"> Mint your NFT's</h3>
@@ -138,41 +141,46 @@ const HomePage = () => {
               quantity={publicQuantity}
               setQuantity={setPublicQuantity}
               button={"Public Mint"}
+              Eth={'0.001ETH'}
             />
             <MintForm
               mintFunction={WhiteListMintNFT}
               quantity={whiteListQuantity}
               setQuantity={setWhiteListQuantity}
               button={"WhiteList Mint"}
+              Eth={'0.0009ETH'}
+              
+
             />
           </div>
         </div>
       </div>
 
+
+      <ToastContainer />
+      </div>
       <div className="w-[90%] mx-auto py-10 ">
         <h2 className="text-2xl font-bold text-center">Your NFTs</h2>
         <div className="mt-4 text-center flex space-x-10 justify-center">
           {NFTCount > 0
             ? yourNFT.length > 0
               ? yourNFT.map((e, index) => {
-                  return (
-                    <NFTHomeCard
-                      key={index}
-                      image={image[index]}
-                      tokenId={e.tokenId.toNumber()}
-                      isListed={e.isListed}
-                      clickFunction={(listPrice) =>
-                        listYourNFTs(e.tokenId, listPrice)
-                      }
-                    />
-                  );
-                })
+                return (
+                  <NFTHomeCard
+                    key={index}
+                    image={image[index]}
+                    tokenId={e.tokenId.toNumber()}
+                    isListed={e.isListed}
+                    clickFunction={(listPrice) =>
+                      listYourNFTs(e.tokenId, listPrice)
+                    }
+                  />
+                );
+              })
               : "Loading..."
             : "No NFTs found in your account. You can mint or buy."}
         </div>
       </div>
-
-      <ToastContainer />
     </>
   );
 };

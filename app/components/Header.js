@@ -6,11 +6,11 @@ import { useContext } from "react";
 const Header = () => {
   const { connectWallet, account, monkeyNFT } = useContext(AppContext);
   return (
-    <header className="bg-purple-400 py-3">
+    <header className="bg-purple-grad py-3">
       <nav className="flex justify-between items-center w-[90%] mx-auto">
         <div>
           <Link href="/">
-            <h1 className="font-bold text-3xl">MonkeyNFT</h1>
+            <h1 className="font-bold text-3xl ">BLAZE</h1>
           </Link>
         </div>
         <div>
@@ -25,7 +25,7 @@ const Header = () => {
               <Link href="/marketplace">Marketplace</Link>
             </li>
             <li>
-              <Link href="/team">Our Team</Link>
+              <Link href="/team">Roadmap</Link>
             </li>
           </ul>
         </div>

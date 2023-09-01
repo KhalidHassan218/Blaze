@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
-import banner from "../utils/assets/nftImage.jpeg";
+import banner from "../utils/assets/monkey.png";
 import { AppContext } from "@/app/utils/assets/GlobalContext/AppProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -43,9 +43,9 @@ const HeroSection = () => {
     account && checkWhiteList();
   }, [monkeyNFT, account, reload]);
   return (
-    <div className="grid grid-cols-2 gap-5 w-[90%] mx-auto py-[80px] items-center">
-      <div>
-        <h2 className="text-4xl font-bold">MonkeyNFT- Mint Your Own NFTs</h2>
+    <div className=" w-[90%] mx-auto py-[80px] items-center">
+      <div className="mb-10">
+        <h2 className="text-4xl font-bold">ROAR- Mint Your Own NFTs</h2>
         <h3 className="text-2xl fond-bold mt-4">
           Create, Sell, Own Unique Digital Assets
         </h3>

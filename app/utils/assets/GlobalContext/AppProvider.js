@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const AppContext = createContext();
-const contractAddress = "0x5f8B32aaF7a2ba3Bf2113af973B6A5bE0504730c";
+const contractAddress = "0x62B08e524399489876725EfAf162452592E5e552";
 const contractABI = contractJSON.abi;
 
 const AppProvider = ({ children }) => {

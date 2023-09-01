@@ -1,6 +1,6 @@
 import React from "react";
 
-const MintForm = ({ mintFunction, quantity, setQuantity, button }) => {
+const MintForm = ({ mintFunction, quantity,Eth, setQuantity, button }) => {
   return (
     <form
       action=""
@@ -8,7 +8,7 @@ const MintForm = ({ mintFunction, quantity, setQuantity, button }) => {
       onSubmit={mintFunction}
     >
       <label htmlFor="quantity" className="text-lg">
-        Quantity
+     {Eth}
       </label>
       <input
         className="border-2 border-purple-600 px-2 py-1 mt-2 rounded-sm"

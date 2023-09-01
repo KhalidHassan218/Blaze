@@ -24,8 +24,8 @@ const NFTInfo = ({ reload }) => {
     account && initialData();
   }, [account, monkeyNFT, reload]);
   return (
-    <div>
-      <h3 className="text-3xl font-bold">
+    <div className="mb-20">
+      <h3 className="text-3xl font-bold mb-10">
         Total minted NFT's are {totalSupply}/2000
       </h3>
       <h3 className="text-2xl font-bold mt-3">
