@@ -6,15 +6,15 @@ import { useContext } from "react";
 const Header = () => {
   const { connectWallet, account, monkeyNFT } = useContext(AppContext);
   return (
-    <header className="bg-purple-grad py-3">
-      <nav className="flex justify-between items-center w-[90%] mx-auto">
-        <div>
+    <header style={{maxWidth:'100%'}}  className="bg-purple-grad py-3">
+      <nav className="flex justify-between flex-col lg:flex-row	 items-center w-[90%] mx-auto">
+        <div className="lg:mb-0 mb-4">
           <Link href="/">
             <h1 className="font-bold text-3xl ">BLAZE</h1>
           </Link>
         </div>
-        <div>
-          <ul className="flex items-center space-x-14 text-lg font-bold">
+        <div className="lg:mb-0 mb-4">
+          <ul className=" text-sm flex items-center space-x-2  md:space-x-10 lg:space-x-14 lg:text-lg font-bold md:text-sm">
             <li>
               <Link href="/">Home</Link>
             </li>

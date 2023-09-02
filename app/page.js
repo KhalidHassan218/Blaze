@@ -127,7 +127,7 @@ const HomePage = () => {
 
   return (
     <>
-    <div className="grid grid-cols-2 gap-6 w-[70%] items-center	 mx-auto py-[50px] items-center">
+    <div className="grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-2 lg:gap-6 w-[90%] lg:w-[70%] items-center	 mx-auto py-[50px] items-center">
         
      <HeroSection/>
 
@@ -135,7 +135,7 @@ const HomePage = () => {
         <NFTInfo reload={reload} />
         <div>
           <h3 className="text-2xl font-bold text-center"> Mint your NFT's</h3>
-          <div className="flex justify-around my-4">
+          <div className="flex justify-evenly space-x-1 my-4">
             <MintForm
               mintFunction={publicMintNFT}
               quantity={publicQuantity}
