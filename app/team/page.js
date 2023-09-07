@@ -2,7 +2,7 @@ import React from "react";
 import {BsDot} from 'react-icons/bs'
 const TeamPage = () => {
   return (
-    <div className="w-[90%] mx-auto py-10 text-center">
+    <div className="w-[90%] mx-auto md:py-10 py-3 text-center">
       <h2 className="text-2xl font-semibold">BLAZE NFT Roadmap</h2>
       <p className="py-4 w-[70%] mx-auto text-lg text-left">
       

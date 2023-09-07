@@ -127,11 +127,11 @@ const HomePage = () => {
 
   return (
     <>
-    <div className="grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-2 lg:gap-6 w-[90%] lg:w-[70%] items-center	 mx-auto py-[50px] items-center">
+    <div className="grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-2 lg:gap-6 w-[90%] lg:w-[70%] items-center	 mx-auto md:py-[50px] py-3 items-center">
         
      <HeroSection/>
 
-      <div style={{height:'100%'}} className=" w-[90%] py-[80px] mx-auto my-2">
+      <div style={{height:'100%'}} className=" w-[90%] md:py-[80px] py-3 mx-auto my-2">
         <NFTInfo reload={reload} />
         <div>
           <h3 className="text-2xl font-bold text-center"> Mint your NFT's</h3>
@@ -159,7 +159,7 @@ const HomePage = () => {
 
       <ToastContainer />
       </div>
-      <div className="w-[90%] mx-auto py-10 ">
+      <div className="w-[90%] mx-auto md:py-10 py-0 ">
         <h2 className="text-2xl font-bold text-center">Your NFTs</h2>
         <div className="mt-4 text-center flex space-x-10 justify-center">
           {NFTCount > 0

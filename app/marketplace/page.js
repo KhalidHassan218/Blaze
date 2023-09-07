@@ -61,7 +61,7 @@ const MarketPage = () => {
   }, [monkeyNFT, account, reload]);
 
   return (
-    <div className="w-[90%] mx-auto py-10 ">
+    <div className="w-[90%] mx-auto md:py-10  py-3">
       <h2 className="text-2xl font-semibold text-center">Listed NFTs</h2>
       <div className="mt-4 text-center grid grid-cols-5 gap-7 justify-center">
         {listedNFTs.length > 0 ? (

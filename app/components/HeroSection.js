@@ -43,7 +43,7 @@ const HeroSection = () => {
     account && checkWhiteList();
   }, [monkeyNFT, account, reload]);
   return (
-    <div className=" w-[90%] mx-auto py-[80px] items-center">
+    <div className=" w-[90%] mx-auto md:py-[80px] py-2 items-center">
       <div className="mb-10">
         <h2 className="text-4xl font-bold">ROAR- Mint Your Own NFTs</h2>
         <h3 className="text-2xl fond-bold mt-4">
